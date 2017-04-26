@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+
+<html xmlns:s="http://sqlfairy.sourceforge.net/sqlfairy.xml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta charset="utf-8">
+<title>テーブル定義</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<style>
+					table.htable {
+						margin: 3em auto 1em auto !important;
+					}
+					table.htable th {
+						border-left: 10px solid #e5e5e5 !important;
+					}
+					footer {
+						border-top: 1px solid #e5e5e5;
+						padding: 0.5em;
+					}
+				</style>
+</head>
+<body>
+<div class="container">
+<h1 class="page-header">テーブル定義</h1>
+<table class="table table-bordered htable"><tbody>
+<tr class="active">
+<th>テーブル名</th>
+<td></td>
+</tr>
+<tr class="active">
+<th>スキーマ</th>
+<td>m_user</td>
+</tr>
+</tbody></table>
+<table class="table table-condensed">
+<thead><tr>
+<th class="text-right">#</th>
+<th>論理名</th>
+<th>物理名</th>
+<th>型</th>
+<th>NULL</th>
+<th>デフォルト値</th>
+<th>主キー</th>
+<th>ユニーク</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="text-right">1</td>
+<td></td>
+<td>user_id</td>
+<td>bigint(20) unsigned</td>
+<td></td>
+<td></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">2</td>
+<td>姓</td>
+<td>family_name</td>
+<td>varbinary(100)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">3</td>
+<td>名</td>
+<td>first_name</td>
+<td>varbinary(100)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">4</td>
+<td>生年月日</td>
+<td>birth_day</td>
+<td>date</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="table table-bordered htable"><tbody>
+<tr class="active">
+<th>テーブル名</th>
+<td></td>
+</tr>
+<tr class="active">
+<th>スキーマ</th>
+<td>wishlist</td>
+</tr>
+</tbody></table>
+<table class="table table-condensed">
+<thead><tr>
+<th class="text-right">#</th>
+<th>論理名</th>
+<th>物理名</th>
+<th>型</th>
+<th>NULL</th>
+<th>デフォルト値</th>
+<th>主キー</th>
+<th>ユニーク</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="text-right">1</td>
+<td></td>
+<td>wishlist_id</td>
+<td>bigint(20) unsigned</td>
+<td></td>
+<td></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">2</td>
+<td>ユーザーID</td>
+<td>user_id</td>
+<td>bigint(20) unsigned</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">3</td>
+<td>欲しい物の名前</td>
+<td>item_name</td>
+<td>varbinary(100)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="text-right">4</td>
+<td>作成日</td>
+<td>created_at</td>
+<td>datetime</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<footer class="text-center">
+					your company
+				</footer>
+</body>
+</html>
+

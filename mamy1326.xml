@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="mamy1326">
+	<table_structure name="m_user">
+		<field Field="user_id" Type="bigint(20) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="family_name" Type="varbinary(100)" Null="NO" Key="" Extra="" Comment="姓" />
+		<field Field="first_name" Type="varbinary(100)" Null="NO" Key="" Extra="" Comment="名" />
+		<field Field="birth_day" Type="date" Null="NO" Key="" Extra="" Comment="生年月日" />
+		<key Table="m_user" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="1" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="m_user" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1" Avg_row_length="16384" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="3" Create_time="2017-04-26 06:34:28" Update_time="2017-04-26 06:36:24" Collation="utf8mb4_bin" Create_options="" Comment="" />
+	</table_structure>
+	<table_structure name="wishlist">
+		<field Field="wishlist_id" Type="bigint(20) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="user_id" Type="bigint(20) unsigned" Null="NO" Key="MUL" Extra="" Comment="ユーザーID" />
+		<field Field="item_name" Type="varbinary(100)" Null="NO" Key="" Extra="" Comment="欲しい物の名前" />
+		<field Field="created_at" Type="datetime" Null="NO" Key="" Extra="" Comment="作成日" />
+		<key Table="wishlist" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="wishlist_id" Collation="A" Cardinality="2" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="wishlist" Non_unique="1" Key_name="user_id" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="2" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="wishlist" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="3" Avg_row_length="5461" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="4" Create_time="2017-04-26 06:35:24" Update_time="2017-04-26 06:40:24" Collation="utf8mb4_bin" Create_options="" Comment="" />
+	</table_structure>
+</database>
+</mysqldump>
