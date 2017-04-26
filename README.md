@@ -1,0 +1,2 @@
+# create_mysql_tables_doc
+MySQLテーブル定義書をコマンドだけで出力した際のもろもろ
